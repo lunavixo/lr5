@@ -3,9 +3,9 @@
 #include <stdlib.h>
 #include <math.h>
 
-#define SETTINGS_PATH "C:\\Users\\Nazar\\Documents\\infka\\lr5\\settings.txt"
-#define TABLE_OTPUT_PATH "C:\\Users\\Nazar\\Documents\\infka\\lr5\\table.txt"
-#define BINARY_OUTPUT_PATH "C:\\Users\\Nazar\\Documents\\infka\\lr5\\data.bin"
+#define SETTINGS_PATH "settings.txt"
+#define TABLE_OTPUT_PATH "table.txt"
+#define BINARY_OUTPUT_PATH "data.bin"
 
 double f(double x);
 void printTable(double *data, unsigned int point_count);
@@ -278,6 +278,8 @@ void fillTable(double **data,
     }
 
     *point_count = inside_point_count;
+
+    printf("Таблицю заповнено\n");
 }
 //Функція залежності y від x за умовою варіанту 2
 double f(double x){
