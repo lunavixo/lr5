@@ -7,3 +7,7 @@ obj/
 *.o
 *.obj
 *.exe
+
+settings.txt
+table.txt
+data.bin
